@@ -96,8 +96,8 @@
             <input type="text" id="height" placeholder="Height" required>
             <input type="text" id="weigth" placeholder="Weight" required>
 
-            <label for="femail">femail<input value="femail" type="radio" id="femail" name="gender" checked></label>
-            <label for="mail">mail<input value="mail" type="radio" id="mail" name="gender"><br></label>
+            <label for="female">female<input value="female" type="radio" id="female" name="gender" checked></label>
+            <label for="male">male<input value="male" type="radio" id="male" name="gender"><br></label>
             
             <input type="submit" value="Send Info" onclick="health()">
         </div>
@@ -115,7 +115,7 @@
             person.height=Number(document.getElementById("height").value);
             person.weigth=Number(document.getElementById("weigth").value);
 
-            if(document.getElementById("mail").checked){
+            if(document.getElementById("male").checked){
                 gender = "man";
             }else{
                 gender = "woman";
